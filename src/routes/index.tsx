@@ -1,29 +1,69 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
+import { Starfield } from "@/components/portfolio/Starfield";
+import { DecryptLoader } from "@/components/portfolio/DecryptLoader";
+import { Nav } from "@/components/portfolio/Nav";
+import { Hero } from "@/components/portfolio/Hero";
+import { About } from "@/components/portfolio/About";
+import { Experience } from "@/components/portfolio/Experience";
+import { Education } from "@/components/portfolio/Education";
+import { Projects } from "@/components/portfolio/Projects";
+import { Publications } from "@/components/portfolio/Publications";
+import { Blog } from "@/components/portfolio/Blog";
+import { Contact } from "@/components/portfolio/Contact";
+import { Footer } from "@/components/portfolio/Footer";
+import { SectionProgress } from "@/components/portfolio/SectionProgress";
+import { profile } from "@/data/portfolio";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: `${profile.name} — ${profile.tag}` },
+      { name: "description", content: profile.bio },
+      { property: "og:title", content: `${profile.name} — ${profile.tag}` },
+      { property: "og:description", content: profile.bio },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "/" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: profile.name,
+          jobTitle: profile.tag,
+          email: `mailto:${profile.email}`,
+          address: profile.location,
+        }),
+      },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
+  const [loading, setLoading] = useState(true);
+
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="relative min-h-screen overflow-x-hidden">
+      <Starfield />
+      {loading && <DecryptLoader onDone={() => setLoading(false)} />}
+      <Nav />
+      <SectionProgress />
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Education />
+        <Projects />
+        <Publications />
+        <Blog />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 }
