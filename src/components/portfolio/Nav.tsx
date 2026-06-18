@@ -31,8 +31,14 @@ export function Nav() {
             ))}
           </ul>
 
-          <a href="#home" className="font-mono text-2xl font-bold tracking-tight text-primary text-glow">
-            MT<span className="text-primary/60">.</span>
+          <a href="#home" className="group flex items-center gap-2 font-mono text-primary text-glow">
+            <span className="relative flex h-9 w-9 items-center justify-center rounded-lg border border-primary/50 bg-gradient-to-br from-primary/20 to-primary/5 shadow-[0_0_20px_-4px_hsl(var(--primary)/0.6)] transition-transform group-hover:rotate-3">
+              <span className="font-sans text-base font-extrabold tracking-tighter text-primary">M</span>
+              <span className="absolute -bottom-0.5 -right-0.5 font-sans text-[0.6rem] font-bold text-primary/80">A</span>
+            </span>
+            <span className="hidden font-sans text-sm font-semibold tracking-[0.2em] text-foreground/90 sm:inline">
+              MUZAMMIL<span className="text-primary">.</span>
+            </span>
           </a>
 
           <div className="flex items-center gap-6">
