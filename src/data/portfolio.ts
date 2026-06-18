@@ -1,18 +1,19 @@
 export const profile = {
-  name: "Muhammad Taimoor Khan",
-  tag: "AI Researcher & Software Developer",
-  tagline: "Master AI & Tech, Unlock the Future!",
-  bio: "Specializing in artificial intelligence, data science, and software development with a passion for creating intelligent solutions to complex problems.",
-  location: "Karachi, Pakistan",
-  email: "hello@taimoor.dev",
+  name: "Muzammil Ahmed Khilji",
+  tag: "ML Engineer · Python Developer · AI & Data",
+  tagline: "Build with Data. Ship with AI.",
+  bio: "Final-year Computer Science student at Mehran UET Jamshoro (GPA 3.96/4.00) with hands-on experience in machine learning, Python automation, and full-stack web development. Currently building AI-driven ML pipelines as a Machine Learning Intern at FlyRank AI, with 20+ delivered freelance projects on Fiverr.",
+  location: "Hyderabad, Pakistan",
+  email: "mskhilji89@gmail.com",
+  phone: "+92 311 3040898",
   resumeUrl: "/resume.pdf",
 };
 
 export const socials = [
-  { label: "GitHub", href: "https://github.com/myselftaimoor", icon: "github" as const },
-  { label: "LinkedIn", href: "https://linkedin.com/in/myselftaimoor", icon: "linkedin" as const },
-  { label: "Twitter", href: "https://twitter.com/myselftaimoor", icon: "twitter" as const },
-  { label: "Scholar", href: "https://scholar.google.com", icon: "graduation" as const },
+  { label: "GitHub", href: "https://github.com/muzammilkhilji", icon: "github" as const },
+  { label: "LinkedIn", href: "https://linkedin.com/in/muzammilahmedkhilji", icon: "linkedin" as const },
+  { label: "Email", href: "mailto:mskhilji89@gmail.com", icon: "twitter" as const },
+  { label: "Phone", href: "tel:+923113040898", icon: "graduation" as const },
 ];
 
 export const navLinks = [
@@ -21,155 +22,131 @@ export const navLinks = [
   { id: "experience", label: "Experience" },
   { id: "education", label: "Education" },
   { id: "projects", label: "Projects" },
-  { id: "publications", label: "Publications" },
-  { id: "blog", label: "Blog" },
+  { id: "publications", label: "Certifications" },
   { id: "contact", label: "Contact" },
 ];
 
 export const stats = [
-  { label: "Years in AI", value: "5+" },
-  { label: "Publications", value: "12" },
-  { label: "Projects Shipped", value: "40+" },
-  { label: "Open Source ★", value: "1.2k" },
+  { label: "GPA", value: "3.96" },
+  { label: "Fiverr Projects", value: "20+" },
+  { label: "Client Rating", value: "5★" },
+  { label: "YOLO mAP", value: "88%+" },
 ];
 
 export const skills = [
-  "Python", "PyTorch", "TensorFlow", "Hugging Face", "LangChain",
-  "OpenAI API", "TypeScript", "React", "Next.js", "Node.js",
-  "FastAPI", "PostgreSQL", "Docker", "AWS", "MLOps", "RAG",
-  "Computer Vision", "NLP", "Federated Learning", "Tailwind CSS",
+  "Python", "Java", "JavaScript", "Machine Learning", "Deep Learning",
+  "YOLOv8", "scikit-learn", "TensorFlow", "NLP", "Prompt Engineering",
+  "RapidMiner", "React", "Node.js", "HTML5", "CSS3", "REST APIs",
+  "MySQL", "MongoDB", "Oracle", "Git", "GitHub", "Postman",
+  "Selenium", "Web Scraping", "Data Analysis", "Automation",
 ];
 
 export const experience = [
   {
-    role: "COO & AI Lead",
-    company: "Digipex Solutions",
-    period: "2023 — Present",
+    role: "Machine Learning Intern",
+    company: "FlyRank AI",
+    period: "June 2026 — Present",
     bullets: [
-      "Leading operations and AI automation across a 20-person engineering org.",
-      "Architected an LLM-powered workflow platform serving 30+ enterprise clients.",
-      "Built RAG pipelines on top of internal knowledge bases (LangChain + pgvector).",
+      "Collaborate on ML model development and optimization, contributing to AI pipelines that process and analyze large-scale datasets.",
+      "Apply Python-based ML frameworks (scikit-learn, TensorFlow) to build, train, and evaluate predictive models for production-level AI products.",
+      "Conduct data preprocessing, feature engineering, and model tuning to iteratively improve model performance.",
+      "Participate in code reviews, documentation, and deployment of ML components using GitHub and cloud-based tools.",
     ],
-    tech: ["LangChain", "OpenAI", "Postgres", "Next.js"],
+    tech: ["Python", "scikit-learn", "TensorFlow", "GitHub"],
   },
   {
-    role: "AI Research Engineer",
-    company: "Independent / Freelance",
-    period: "2021 — 2023",
+    role: "Freelance Web Developer",
+    company: "Fiverr",
+    period: "2023 — May 2026",
     bullets: [
-      "Published research on federated learning for medical imaging.",
-      "Shipped computer-vision systems for retail analytics (PyTorch, ONNX).",
-      "Consulted on MLOps and model deployment for early-stage startups.",
+      "Delivered 20+ full-stack web development projects to international clients with a consistent 5-star rating.",
+      "Built responsive, cross-device websites using HTML, CSS, JavaScript and React, integrating Node.js + MySQL/MongoDB backends.",
+      "Managed end-to-end project lifecycles: requirements, development, testing, deployment, and client iteration.",
+      "Reduced average project delivery time by 20% via reusable component libraries and standardized workflows.",
     ],
-    tech: ["PyTorch", "ONNX", "FastAPI", "Docker"],
-  },
-  {
-    role: "Full-Stack Developer",
-    company: "Freelance",
-    period: "2019 — 2021",
-    bullets: [
-      "Built React + Node SaaS dashboards and Shopify/WordPress stores.",
-      "Designed UI systems with a focus on conversion and accessibility.",
-    ],
-    tech: ["React", "Node.js", "Shopify", "Tailwind"],
+    tech: ["React", "Node.js", "MySQL", "MongoDB"],
   },
 ];
 
 export const education = [
   {
-    school: "National University of Sciences & Technology",
-    degree: "M.S. — Artificial Intelligence",
-    period: "2022 — 2024",
-    detail: "Thesis on federated learning for privacy-preserving medical imaging.",
-  },
-  {
-    school: "Capital University of Science & Technology",
-    degree: "B.S. — Computer Science",
-    period: "2017 — 2021",
-    detail: "Graduated with distinction. Focus on software engineering and algorithms.",
+    school: "Mehran University of Engineering & Technology, Jamshoro",
+    degree: "B.S. — Computer Science (GPA 3.96 / 4.00)",
+    period: "2022 — 2026",
+    detail: "Ranked in the top 5% of the CS department. Coursework: Machine Learning, DSA, Database Systems, Software Engineering, Computer Networks, OOP.",
   },
 ];
 
 export const projects = [
   {
-    title: "Cognition Engine",
-    description: "Multi-agent reasoning framework with tool-use, memory, and self-reflection. Powers production assistants for three SaaS companies.",
-    tech: ["Python", "LangGraph", "OpenAI", "Redis"],
-    href: "https://github.com/myselftaimoor",
+    title: "UrbanEye — AI Civic Issue Detection",
+    description: "Real-time civic issue detector built on YOLOv8 and trained on 1,000+ labeled images of potholes, cracks, and sewerage problems. Achieves 88%+ mAP and assigns Low/Medium/Critical severity. Final Year Project recognized for smart-city impact.",
+    tech: ["Python", "YOLOv8", "OpenCV", "Deep Learning"],
+    href: "https://github.com/muzammilkhilji",
   },
   {
-    title: "FedMed",
-    description: "Federated learning pipeline for hospital networks. Trains diagnostic models without centralizing patient data.",
-    tech: ["PyTorch", "Flower", "Docker"],
-    href: "https://github.com/myselftaimoor",
+    title: "EagleType — GUI Typing Speed Analyzer",
+    description: "Java Swing desktop app that measures typing speed (WPM) and accuracy in real time. Built on an MVC architecture for a modular, maintainable codebase.",
+    tech: ["Java", "OOP", "Swing", "MVC"],
+    href: "https://github.com/muzammilkhilji",
   },
   {
-    title: "Retail Vision Suite",
-    description: "Real-time foot-traffic and shelf-stock analytics from in-store cameras. Edge-deployed on Jetson.",
-    tech: ["YOLOv8", "ONNX", "FastAPI"],
-    href: "https://github.com/myselftaimoor",
+    title: "Responsive Portfolio Website",
+    description: "Fully responsive personal portfolio with advanced hover animations, lazy loading, and CSS Grid/Flexbox layouts — Google PageSpeed score 90+.",
+    tech: ["JavaScript", "HTML5", "CSS3", "UI/UX"],
+    href: "https://github.com/muzammilkhilji",
   },
   {
-    title: "Ledger Copilot",
-    description: "RAG assistant over financial documents — invoices, contracts, statements — with citation-grounded answers.",
-    tech: ["LangChain", "pgvector", "Next.js"],
-    href: "https://github.com/myselftaimoor",
-  },
-  {
-    title: "Shopify Pulse",
-    description: "Conversion-optimization toolkit for Shopify merchants. A/B tests, heatmaps, and AI copy suggestions.",
-    tech: ["Remix", "Shopify", "TypeScript"],
-    href: "https://github.com/myselftaimoor",
-  },
-  {
-    title: "Portfolio Engine",
-    description: "The site you're looking at. Built with TanStack Start, Tailwind v4, and Framer Motion.",
-    tech: ["TanStack", "Tailwind", "Motion"],
-    href: "https://github.com/myselftaimoor",
+    title: "URL Shortener Application",
+    description: "Python + Tkinter desktop tool that integrates a third-party REST API to generate and manage short links, with clipboard copy and link history tracking.",
+    tech: ["Python", "Tkinter", "REST API"],
+    href: "https://github.com/muzammilkhilji",
   },
 ];
 
 export const publications = [
   {
-    title: "Privacy-Preserving Federated Learning for Multi-Center Radiology",
-    venue: "IEEE TMI",
+    title: "Google Data Analytics: Ask Questions to Make Data-Driven Decisions",
+    venue: "Coursera",
+    year: "2025",
+    authors: "Google Certificate",
+    href: "https://coursera.org/share/230e081330840c40abe5d145654ce4cc",
+  },
+  {
+    title: "Start Writing Prompts like a Pro",
+    venue: "Coursera · Google",
+    year: "2025",
+    authors: "Google Certificate",
+    href: "https://coursera.org/share/86c2948a7590087a3406e71e38e8e7ae",
+  },
+  {
+    title: "Google Prompting Essentials (Specialization)",
+    venue: "Coursera · Google",
+    year: "2025",
+    authors: "Specialization",
+    href: "https://coursera.org/share/bed3b76bf00baefb4ef6ad70ba729bcd",
+  },
+  {
+    title: "Speed Up Data Analysis and Presentation Building",
+    venue: "Coursera · Google",
+    year: "2025",
+    authors: "Google Certificate",
+    href: "https://coursera.org/share/49f3476458b95d50f7fb31e96a84c34e",
+  },
+  {
+    title: "Use AI as a Creative or Expert Partner",
+    venue: "Coursera · Google",
+    year: "2025",
+    authors: "Google Certification",
+    href: "https://coursera.org/share/d40bd65a7e3a8bb7b878c6a88a857cf5",
+  },
+  {
+    title: "DigiSkills Freelancing Certificate",
+    venue: "DigiSkills",
     year: "2024",
-    authors: "Khan, M. T., et al.",
-    href: "#",
-  },
-  {
-    title: "On the Sample Efficiency of Retrieval-Augmented Generation",
-    venue: "ACL Findings",
-    year: "2023",
-    authors: "Khan, M. T., Rahman, A.",
-    href: "#",
-  },
-  {
-    title: "Edge-Deployed Vision Transformers for Retail Analytics",
-    venue: "CVPR Workshop",
-    year: "2023",
-    authors: "Khan, M. T., et al.",
-    href: "#",
+    authors: "Certificate",
+    href: "https://drive.google.com/file/d/1QFftgqCZpxO6FRfTpk7XE4Nvd-lx-LzY/view",
   },
 ];
 
-export const blogPosts = [
-  {
-    title: "Why Multi-Agent Systems Are the Next Browser",
-    excerpt: "A pragmatic look at where agentic frameworks earn their keep — and where they collapse.",
-    date: "May 2026",
-    tag: "AI",
-  },
-  {
-    title: "Federated Learning Without the Hype",
-    excerpt: "What actually works in production federated training, and the failure modes papers don't talk about.",
-    date: "March 2026",
-    tag: "Research",
-  },
-  {
-    title: "Shipping LLM Features That Don't Break in Production",
-    excerpt: "Evals, guardrails, and the unglamorous infrastructure behind a 'simple' chat box.",
-    date: "January 2026",
-    tag: "Engineering",
-  },
-];
+export const blogPosts: { title: string; excerpt: string; date: string; tag: string }[] = [];

@@ -4,7 +4,7 @@ import { publications } from "@/data/portfolio";
 
 export function Publications() {
   return (
-    <Section id="publications" eyebrow="// 05 — Publications" title="Research output.">
+    <Section id="publications" eyebrow="// 05 — Certifications" title="Certifications & training.">
       <ul className="divide-y divide-border rounded-xl border border-border bg-card backdrop-blur">
         {publications.map((p) => (
           <li key={p.title}>
