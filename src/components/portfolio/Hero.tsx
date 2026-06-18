@@ -1,6 +1,7 @@
 import { ArrowRight, Download, ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
-import portrait from "@/assets/portrait.jpg";
+import portraitAsset from "@/assets/profile-pic.png.asset.json";
+const portrait = portraitAsset.url;
 import { profile } from "@/data/portfolio";
 
 export function Hero() {

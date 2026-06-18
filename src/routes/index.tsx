@@ -9,7 +9,7 @@ import { Experience } from "@/components/portfolio/Experience";
 import { Education } from "@/components/portfolio/Education";
 import { Projects } from "@/components/portfolio/Projects";
 import { Publications } from "@/components/portfolio/Publications";
-import { Blog } from "@/components/portfolio/Blog";
+
 import { Contact } from "@/components/portfolio/Contact";
 import { Footer } from "@/components/portfolio/Footer";
 import { SectionProgress } from "@/components/portfolio/SectionProgress";
@@ -60,7 +60,7 @@ function Index() {
         <Education />
         <Projects />
         <Publications />
-        <Blog />
+        
         <Contact />
       </main>
       <Footer />
