@@ -1,3 +1,5 @@
+import resumeAsset from "@/assets/resume.docx.asset.json";
+
 export const profile = {
   name: "Muzammil Ahmed Khilji",
   tag: "ML Engineer · Python Developer · AI & Data",
@@ -6,7 +8,9 @@ export const profile = {
   location: "Hyderabad, Pakistan",
   email: "mskhilji89@gmail.com",
   phone: "+92 311 3040898",
-  resumeUrl: "/resume.pdf",
+  whatsapp: "923113040898",
+  resumeUrl: resumeAsset.url,
+  resumeFilename: "MuzammilAhmedKhilji_Resume.docx",
 };
 
 export const socials = [
