@@ -45,6 +45,9 @@ export function Hero() {
             </a>
             <a
               href={profile.resumeUrl}
+              download={profile.resumeFilename}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-md bg-gradient-primary px-5 py-3 font-medium text-primary-foreground shadow-glow transition-transform hover:-translate-y-0.5"
             >
               Download Resume

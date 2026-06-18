@@ -17,11 +17,19 @@ export function Contact() {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
     const name = String(data.get("name") || "");
+    const email = String(data.get("email") || "");
     const subject = String(data.get("subject") || "Hello");
     const message = String(data.get("message") || "");
-    window.location.href = `mailto:${profile.email}?subject=${encodeURIComponent(
-      subject,
-    )}&body=${encodeURIComponent(`From: ${name}\n\n${message}`)}`;
+    const text =
+      `*${subject}*\n\n` +
+      `Name: ${name}\n` +
+      `Email: ${email}\n\n` +
+      `${message}`;
+    window.open(
+      `https://wa.me/${profile.whatsapp}?text=${encodeURIComponent(text)}`,
+      "_blank",
+      "noopener,noreferrer",
+    );
     setSent(true);
   };
 
@@ -90,7 +98,7 @@ export function Contact() {
             className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 font-medium text-primary-foreground shadow-glow transition-transform hover:-translate-y-0.5"
           >
             <Send className="h-4 w-4" />
-            {sent ? "Opening mail…" : "Send Message"}
+            {sent ? "Opening WhatsApp…" : "Send via WhatsApp"}
           </button>
         </form>
       </div>
