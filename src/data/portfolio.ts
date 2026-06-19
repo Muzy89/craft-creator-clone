@@ -14,7 +14,7 @@ export const profile = {
 };
 
 export const socials = [
-  { label: "GitHub", href: "https://github.com/muzammilkhilji", icon: "github" as const },
+  { label: "GitHub", href: "https://github.com/Muzy89", icon: "github" as const },
   { label: "LinkedIn", href: "https://linkedin.com/in/muzammilahmedkhilji", icon: "linkedin" as const },
   { label: "Email", href: "mailto:mskhilji89@gmail.com", icon: "twitter" as const },
   { label: "Phone", href: "tel:+923113040898", icon: "graduation" as const },
